@@ -4,29 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <link rel='stylesheet' href="./css/bootstrap.css" />
-    <title>Uptivity Analytics Viewer</title>
+    <title>Story Editor</title>
 </head>
 <body ng-app="StoryListModule">
 
-    <div ng-controller="storyList">
-        <div class="btn-group" style="float:right" ng-controller="$parent.NewStoryController as $ctrl">
-            <button type="button" class="btn btn-success" ng-click="$ctrl.add()">Add</button>
-        </div>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                </tr>
-            </thead>
-            <tbody ng-repeat="story in stories">
-                <tr>
-                    <td>{{story.Title}}</td>
-                    <td>{{story.Title}}</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+    <div ng-view></div>
 
     <script src="./installed_scripts/angular.min.js"></script>
     <script src="./installed_scripts/angular-route.min.js"></script>

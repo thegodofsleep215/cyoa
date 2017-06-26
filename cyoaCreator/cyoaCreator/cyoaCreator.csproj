@@ -74,9 +74,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApiStartup.cs" />
-    <Compile Include="Controllers\InMemoryStoryDal.cs" />
-    <Compile Include="Controllers\IStoryDal.cs" />
-    <Compile Include="Dal\StoryController.cs" />
+    <Compile Include="Dal\InMemoryStoryDal.cs" />
+    <Compile Include="Dal\IStoryDal.cs" />
+    <Compile Include="Controllers\StoryController.cs" />
+    <Compile Include="Dal\JsonFileDAl.cs" />
     <Compile Include="StoryFactory.cs" />
     <Content Include="Content\scripts\Controllers\StoryList.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -92,6 +93,9 @@
     </Content>
     <Content Include="Content\scripts\templates\addStoryModal.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\scripts\templates\storyList.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
