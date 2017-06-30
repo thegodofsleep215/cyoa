@@ -5,7 +5,7 @@ app.config(function ($routeProvider) {
         .when("/", {
             templateUrl: "scripts/templates/storyList.html"
         })
-        .when('/edit', {
+        .when("/edit/:id", {
             templateUrl: "scripts/templates/storyEdit.html"
         });
 });

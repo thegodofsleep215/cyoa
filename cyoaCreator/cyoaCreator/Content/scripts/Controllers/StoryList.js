@@ -21,7 +21,7 @@
     }
 };
 
-app.controller('storyList', function ($scope, storyApi) {
+app.controller('storyList', function ($location, $scope, storyApi) {
     $scope.NewStoryController = asm;
     storyApi.getStories().then(function (data) {
         $scope.stories = data.data;
@@ -31,6 +31,10 @@ app.controller('storyList', function ($scope, storyApi) {
         $scope.stories.push(story);
 
     })
+
+    $scope.editStory = function (story) {
+        $location.path('/edit/' + story.Id);
+    };
 });
 app.controller("AddStoryController", function ($uibModalInstance) {
     var $ctrl = this;

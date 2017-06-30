@@ -2,17 +2,20 @@
     <div class="btn-group" style="float:right" ng-controller="$parent.NewStoryController as $ctrl">
         <button type="button" class="btn btn-success" ng-click="$ctrl.add()">Add</button>
     </div>
-    <table class="table">
+    <table class="table table-striped table-hover">
         <thead>
             <tr>
                 <th>Title</th>
                 <th>Author</th>
+                <th></th>
             </tr>
         </thead>
         <tbody ng-repeat="story in stories">
             <tr>
                 <td>{{story.Title}}</td>
-                <td>{{story.Title}}</td>
+                <td>{{story.Author}}</td>
+                
+                <td><span class="glyphicon glyphicon-edit" ng-click="editStory(story)"></span></td>
             </tr>
         </tbody>
     </table>

@@ -94,6 +94,9 @@
     <Content Include="Content\scripts\templates\addStoryModal.html">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Content\scripts\templates\storyEdit.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\scripts\templates\storyList.html">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -103,11 +106,21 @@
     <None Include="Content\css\bootstrap-theme.css.map" />
     <None Include="Content\css\bootstrap-theme.min.css.map" />
     <None Include="Content\css\bootstrap.css.map" />
-    <None Include="Content\css\bootstrap.min.css.map" />
-    <None Include="Content\fonts\glyphicons-halflings-regular.eot" />
-    <None Include="Content\fonts\glyphicons-halflings-regular.ttf" />
-    <None Include="Content\fonts\glyphicons-halflings-regular.woff" />
-    <None Include="Content\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="Content\css\bootstrap.min.css.map">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\fonts\glyphicons-halflings-regular.eot">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\fonts\glyphicons-halflings-regular.ttf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\fonts\glyphicons-halflings-regular.woff">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Content\fonts\glyphicons-halflings-regular.woff2">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Include="packages.config" />
     <None Include="Content\installed_scripts\angular-animate.min.js.map" />
     <None Include="Content\installed_scripts\angular-aria.min.js.map" />
@@ -127,7 +140,9 @@
     <None Include="Content\installed_scripts\jquery-3.1.1.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Content\css\bootstrap-theme.css" />
+    <Content Include="Content\css\bootstrap-theme.css">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\css\bootstrap-theme.min.css" />
     <Content Include="Content\css\bootstrap.css">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -176,7 +191,9 @@
     <Content Include="Content\installed_scripts\angular.min.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\fonts\glyphicons-halflings-regular.svg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\installed_scripts\bootstrap.js" />
     <Content Include="Content\installed_scripts\bootstrap.min.js">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
